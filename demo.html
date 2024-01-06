@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles_demo.css">
-    <title>Demo</title>
+    <title>COSC2083 Project Demo</title>
 </head>
 
 <script src="dragdrop.js"></script>
@@ -27,17 +27,17 @@
 
     <h3>Activity 1</h3>
 
-    <div>
+    <div id="problem-intro">
         <p>For our first activity, we will write some Java code to solve the following problem:</p>
     </div>
 
-    <div>
+    <div id="problem-statement">
         <p>We are given a list of game titles by our friend Jim. 
             He wants us to help him figure out if he already has the game <b>Minecraft</b> in his library.</p>
         <p>For this task, a simple <a href="https://www.w3schools.com/java/java_for_loop.asp">FOR Loop</a> will do the trick.</p>
     </div>
 
-    <div class="flex-container" id="start-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="flex-container" id="start-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
         <div class="flex-element" id="code-chunk-1" draggable="true" ondragstart="drag(event)">
             1. Drag this code here!
         </div>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="flex-container" id="end-area-1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="flex-container" id="end-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
         <div class="flex-element" id="code-chunk-3" draggable="true" ondragstart="drag(event)">
             3. Drag this code here!
         </div>
@@ -55,11 +55,9 @@
         </div>
     </div>
 
-    <div class="flex-container" id="end-area-2" ondrop="drop(event)" ondragover="allowDrop(event)">
-    </div>
-
     <div id="activity-code">
-        
+        <div>
+        </div>
     </div>
 
 

@@ -9,5 +9,8 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    if (ev.target.id.includes("dropzone")) {
+        ev.target.appendChild(document.getElementById(data));
+    }
+    return;
 }
