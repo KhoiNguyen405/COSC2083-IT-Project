@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
+
+    <style>
+        #start-area, #end-area {
+          float: left;
+          width: 1000px;
+          height: 35px;
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid black;
+        }
+
+        #code-chunk {
+          width: 150px;
+          height: 35px;
+          border: 1px solid black;
+        }
+    </style>
 </head>
 
 <script src="dragdrop.js"></script>
@@ -35,6 +52,15 @@
             He wants us to help him figure out if he already has the game <b>Minecraft</b> in his library.</p>
         <p>For this task, a simple <a href="https://www.w3schools.com/java/java_for_loop.asp">FOR Loop</a> will do the trick.</p>
     </div>
+
+    <div id="start-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="code-chunk" draggable="true" ondragstart="drag(event)">Drag this code here!</div>
+    </div>
+
+    <div id="end-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+
 
 </body>
 </html>
