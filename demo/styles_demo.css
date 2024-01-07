@@ -73,3 +73,7 @@
     bottom: 13%;
     right: 5%;
 }
+
+#clear-button {
+    margin: 10px;
+}

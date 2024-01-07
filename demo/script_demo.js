@@ -10,9 +10,6 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     if (ev.target.id.includes("dropzone")) {
-        if (document.getElementById(ev.target.id).firstChild != null) {
-            
-        }
         ev.target.appendChild(document.getElementById(data));
     }
     return;
@@ -55,4 +52,8 @@ function gradeCorrect(divID) {
 function gradeIncorrect(divID) {
     document.getElementById(divID).style.border = "2px solid red";
     document.getElementById("score").style.border = "2px solid red";
+}
+
+function clearDropArea() {
+    
 }
