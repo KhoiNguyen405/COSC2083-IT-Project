@@ -27,6 +27,7 @@
     </div>
     <hr>
 
+    <!-- Activity section -->
     <h3>Activity 1</h3>
 
     <div id="problem-intro">
@@ -39,6 +40,7 @@
         <p>For this task, a simple <a href="https://www.w3schools.com/java/java_for_loop.asp">FOR Loop</a> will do the trick.</p>
     </div>
 
+    <!-- Container for draggable code chunks -->
     <div class="flex-container" id="start-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
         <div class="flex-element" id="code-chunk-1" draggable="true" ondragstart="drag(event)">
             1. Drag this code here!
@@ -46,8 +48,15 @@
         <div class="flex-element" id="code-chunk-2" draggable="true" ondragstart="drag(event)">
             2. Drag this code here!
         </div>
+        <div class="flex-element" id="code-chunk-3" draggable="true" ondragstart="drag(event)">
+            3. Drag this code here!
+        </div>
+        <div class="flex-element" id="code-chunk-4" draggable="true" ondragstart="drag(event)">
+            4. Drag this code here!
+        </div>
     </div>
 
+    <!-- Drop area -->
     <div class="activity-code">
         <div>
             <pre>String[] gamesCollection = { "Pokémon Yellow", "Call of Duty", "The Sims", "Minecraft", "VR Chat", "Tekken 8" };</pre>
@@ -55,7 +64,7 @@
         <br>
         
         <div class="new-line">
-            <pre>for ( </pre>
+            <pre>for (</pre>
         </div>
         <div class="awnser-line" id="dropzone-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="in-line">
@@ -66,7 +75,7 @@
             <pre>   do this;</pre>
         </div>
         <div class="awnser-line" id="dropzone-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        
+
         <div class="new-line">
             <pre>};</pre>
         </div>
