@@ -9,7 +9,7 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    if (ev.target.id.includes("dropzone")) {
+    if (ev.target.id.includes("dropzone") && ev.target.children.length == 0) {
         ev.target.appendChild(document.getElementById(data));
     }
     return;
@@ -54,6 +54,14 @@ function gradeIncorrect(divID) {
     document.getElementById("score").style.border = "2px solid red";
 }
 
-function clearDropArea() {
-    
+function clearDropArea(numQ) {
+    let dropzone_ID;
+    let child_el;
+    for (let i = 0; i < numQ; i++) {
+        dropzone_ID = "ans-dropzone-" + String(i+1);
+        child_el = document.getElementById(dropzone_ID).firstChild;
+        if (child_el != null) {
+            document.getElementById("start-dropzone").appendChild(child_el);
+        }
+    }
 }
