@@ -9,7 +9,8 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    if (ev.target.id.includes("dropzone") && ev.target.children.length == 0) {      // Check if correct spot and is empty
+    if (ev.target.id.includes("dropzone")) {      
+        if (ev.target.id.includes("ans-dropzone") && ev.target.children.length == 0)   // Check if correct spot and is empty
         ev.target.appendChild(document.getElementById(data));
     }
     return;
