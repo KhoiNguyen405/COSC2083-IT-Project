@@ -44,40 +44,40 @@
 
     <!-- Container for draggable code chunks -->
     <div class="flex-container" id="start-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="flex-element" id="correct-code-02" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="correct-code-2" draggable="true" ondragstart="drag(event)">
             <code>if</code>
         </div>
-        <div class="flex-element" id="correct-code-01" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="correct-code-1" draggable="true" ondragstart="drag(event)">
             <code>i &#60 games.length</code>
         </div>
-        <div class="flex-element" id="code-chunk-03" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-3" draggable="true" ondragstart="drag(event)">
             <code>i &#60 gamesCollection.length</code>
         </div>
-        <div class="flex-element" id="code-chunk-04" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-4" draggable="true" ondragstart="drag(event)">
             <code>while</code>
         </div>
-        <div class="flex-element" id="code-chunk-05" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-5" draggable="true" ondragstart="drag(event)">
             <code>return true;</code>
         </div>
-        <div class="flex-element" id="correct-code-05" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="correct-code-5" draggable="true" ondragstart="drag(event)">
             <code>return results;</code>
         </div>
-        <div class="flex-element" id="code-chunk-07" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-7" draggable="true" ondragstart="drag(event)">
             <code>name.contains("craft")</code>
         </div>
-        <div class="flex-element" id="correct-code-03" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="correct-code-3" draggable="true" ondragstart="drag(event)">
             <code>name.contains(keyword.toLowerCase())</code>
         </div>
-        <div class="flex-element" id="code-chunk-09" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-9" draggable="true" ondragstart="drag(event)">
             <code>name == "craft"</code>
         </div>
-        <div class="flex-element" id="correct-code-04" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="correct-code-4" draggable="true" ondragstart="drag(event)">
             <code>games[i]</code>
         </div>
         <div class="flex-element" id="code-chunk-11" draggable="true" ondragstart="drag(event)">
             <code>gamesCollection[i]</code>
         </div>
-        <div class="flex-element" id="code-chunk-11" draggable="true" ondragstart="drag(event)">
+        <div class="flex-element" id="code-chunk-12" draggable="true" ondragstart="drag(event)">
             <code>return false;</code>
         </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="new-line">
             <pre>   for ( int i = 0; </pre>
         </div>
-        <div class="awnser-line" id="dropzone-01" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="awnser-line" id="ans-dropzone-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="in-line">
             <pre>; i++) {</pre>
         </div>
@@ -114,11 +114,11 @@
         <div class="new-line">
             <pre>      </pre>
         </div>
-        <div class="awnser-line" id="dropzone-02" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="awnser-line" id="ans-dropzone-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="in-line">
             <pre>(</pre>
         </div>
-        <div class="awnser-line" id="dropzone-03" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="awnser-line" id="ans-dropzone-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="in-line">
             <pre>) {</pre>
         </div>
@@ -126,7 +126,7 @@
         <div class="new-line">
             <pre>         results.add(</pre>
         </div>
-        <div class="awnser-line" id="dropzone-04" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="awnser-line" id="ans-dropzone-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="in-line">
             <pre>);</pre>
         </div>
@@ -142,15 +142,15 @@
         <div class="new-line">
             <pre>   </pre>
         </div>
-        <div class="awnser-line" id="dropzone-05" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="awnser-line" id="ans-dropzone-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div class="new-line">
             <pre>};</pre>
         </div>
 
-        <div id="score"></div>
+        <div id="score" style="display:none"></div>
 
         <!-- Button to check answer -->
-        <button id="check-answer" type="button" onclick="checkAnswer()">Check answers</button>
+        <button id="check-answer" type="button" onclick="checkAnswer(5)">Check answers</button>
     </div>
 </body>
 </html>

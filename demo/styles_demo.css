@@ -9,18 +9,20 @@
 #start-dropzone {
     width: 80%;
     min-height: 50px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 10px;
+    background-color: lightblue;
 }
 
 .flex-element {
-    width: 300px;
+    min-width: 50px;
     height: 1em;
     margin: 10px;
     padding: 10px;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 25px;
+    background-color: white;
 }
 
 .activity-code {
@@ -60,5 +62,14 @@
     position: absolute;
     height: 3em;
     bottom: 5%;
+    right: 5%;
+}
+
+#score {
+    position: absolute;
+    font-weight: bolder;
+    height: 2em;
+    padding: 10px;
+    bottom: 13%;
     right: 5%;
 }
