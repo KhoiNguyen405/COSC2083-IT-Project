@@ -9,7 +9,7 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    if (ev.target.id.includes("dropzone") && ev.target.children.length == 0) {
+    if (ev.target.id.includes("dropzone") && ev.target.children.length == 0) {      // Check if correct spot and is empty
         ev.target.appendChild(document.getElementById(data));
     }
     return;
@@ -17,15 +17,13 @@ function drop(ev) {
 
 function checkAnswer(numQ) {
     var score = 0;
-    let code_ID;
     let dropzone_ID;
     let child_el;
     for (let i = 0; i < numQ; i++) {
-        code_ID = "correct-code-" + String(i+1);
         dropzone_ID = "ans-dropzone-" + String(i+1);
         child_el = document.getElementById(dropzone_ID).firstElementChild;
-        if (child_el != null) {
-            if (child_el.id == code_ID) {
+        if (child_el != null) {     // Check if a piece of code has been dropped here
+            if (child_el.getAttribute("data-answer") == dropzone_ID) {      // Check correctness
                 score += 1;
                 gradeCorrect(dropzone_ID);
             } else {
@@ -55,6 +53,7 @@ function gradeIncorrect(divID) {
 }
 
 function clearDropArea(numQ) {
+    // Clear dropzones
     let dropzone_ID;
     let child_el;
     for (let i = 0; i < numQ; i++) {
@@ -63,5 +62,9 @@ function clearDropArea(numQ) {
         if (child_el != null) {
             document.getElementById("start-dropzone").appendChild(child_el);
         }
+        document.getElementById(dropzone_ID).style.border = "2px solid grey";
     }
+
+    // Clear score box
+    document.getElementById("score").style.display='none';
 }
