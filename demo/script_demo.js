@@ -9,6 +9,7 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
+    
     if (ev.target.id.includes("dropzone")) {      
         if (ev.target.id.includes("ans-dropzone") && ev.target.children.length != 0) {   // Check if correct spot and is empty
             return;
@@ -25,6 +26,7 @@ function checkAnswer(ele) {
     var numQ = document.getElementById(activity_num).getAttribute("data-numq");
     let dropzone_ID;
     let child_el;
+
     for (let i = 0; i < numQ; i++) {
         dropzone_ID = "ans-dropzone-" + String(i+1);
         child_el = document.getElementById(dropzone_ID).firstElementChild;
@@ -58,8 +60,10 @@ function gradeIncorrect(divID) {
     document.getElementById("score").style.border = "2px solid red";
 }
 
-function clearDropArea(activity) {
-    var numQ = document.getElementById(activity).getAttribute("data-numq");
+function clearDropArea(ele) {
+    var activity_num = ele.parentNode.id;
+    var numQ = document.getElementById(activity_num).getAttribute("data-numq");
+
     // Clear dropzones
     let dropzone_ID;
     let child_el;

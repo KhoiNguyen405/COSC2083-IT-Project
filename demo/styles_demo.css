@@ -75,5 +75,8 @@
 }
 
 #clear-button {
+    position: absolute;
+    top: 100%;
+    right: 95%;
     margin: 10px;
 }
