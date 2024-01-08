@@ -45,8 +45,8 @@ function drop(ev) {
  */
 function checkAnswer(ele) {
     var score = 0;
-    var activity_num = ele.parentNode.id;
-    var numQ = Number(document.getElementById(activity_num).getAttribute("data-numq"));
+    const activity_num = ele.parentNode.id;
+    const numQ = Number(document.getElementById(activity_num).getAttribute("data-numq"));
     let dropzone_ID;
     let child_el;
 
@@ -111,8 +111,8 @@ function gradeIncorrect(divID) {
  * @param {Node} ele: element that called this function.
  */
 function clearDropArea(ele) {
-    var activity_num = ele.parentNode.id;
-    var numQ = Number(document.getElementById(activity_num).getAttribute("data-numq"));
+    const activity_num = ele.parentNode.id;
+    const numQ = Number(document.getElementById(activity_num).getAttribute("data-numq"));
 
     // Clear dropzones
     let dropzone_ID;
