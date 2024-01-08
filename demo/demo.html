@@ -30,133 +30,135 @@
     <!-- Activity section -->
     <h3>Activity 1</h3>
 
-    <div id="problem-intro">
-        <p>For our first activity, we will write some Java code to solve the following problem:</p>
-    </div>
-
-    <div id="problem-statement">
-        <p>We are given a list of game titles by our friend Jim. 
-            He wants us to help him search for games that have <strong>"Craft"</strong> in their name.
-            Then, he wants us to give him a list of games in his library that fit this criteria.</p>
-        <p>For this task, a simple <a href="https://www.w3schools.com/java/java_for_loop.asp">FOR Loop</a> will do the trick.
-            Drag the chunks of code below into the appropriate spots to complete the program.</p>
-    </div>
-
-    <!-- Container for draggable code chunks -->
-    <div class="flex-container" id="start-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="flex-element" id="code-1" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-2">
-            <code>if</code>
+    <div class="activity-container">
+        <div class="problem-intro">
+            <p>For our first activity, we will write some Java code to solve the following problem:</p>
         </div>
-        <div class="flex-element" id="code-2" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-1">
-            <code>i &#60 games.length</code>
+    
+        <div class="problem-statement">
+            <p>We are given a list of game titles by our friend Jim. 
+                He wants us to help him search for games that have <strong>"Craft"</strong> in their name.
+                Then, he wants us to give him a list of games in his library that fit this criteria.</p>
+            <p>For this task, a simple <a href="https://www.w3schools.com/java/java_for_loop.asp">FOR Loop</a> will do the trick.
+                Drag the chunks of code below into the appropriate spots to complete the program.</p>
         </div>
-        <div class="flex-element" id="code-3" draggable="true" ondragstart="drag(event)">
-            <code>i &#60 gamesCollection.length</code>
+    
+        <!-- Container for draggable code chunks -->
+        <div class="flex-container" id="start-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="flex-element" id="code-1" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-2">
+                <code>if</code>
+            </div>
+            <div class="flex-element" id="code-2" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-1">
+                <code>i &#60 games.length</code>
+            </div>
+            <div class="flex-element" id="code-3" draggable="true" ondragstart="drag(event)">
+                <code>i &#60 gamesCollection.length</code>
+            </div>
+            <div class="flex-element" id="code-4" draggable="true" ondragstart="drag(event)">
+                <code>while</code>
+            </div>
+            <div class="flex-element" id="code-5" draggable="true" ondragstart="drag(event)">
+                <code>return true;</code>
+            </div>
+            <div class="flex-element" id="code-6" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-5">
+                <code>return results;</code>
+            </div>
+            <div class="flex-element" id="code-7" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-3">
+                <code>name.contains("craft")</code>
+            </div>
+            <div class="flex-element" id="code-8" draggable="true" ondragstart="drag(event)">
+                <code>name.contains(keyword.toLowerCase())</code>
+            </div>
+            <div class="flex-element" id="code-9" draggable="true" ondragstart="drag(event)">
+                <code>name == "craft"</code>
+            </div>
+            <div class="flex-element" id="code-10" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-4">
+                <code>games[i]</code>
+            </div>
+            <div class="flex-element" id="code-11" draggable="true" ondragstart="drag(event)">
+                <code>gamesCollection[i]</code>
+            </div>
+            <div class="flex-element" id="code-12" draggable="true" ondragstart="drag(event)">
+                <code>return false;</code>
+            </div>
         </div>
-        <div class="flex-element" id="code-4" draggable="true" ondragstart="drag(event)">
-            <code>while</code>
+    
+        <!-- Drop area -->
+        <div class="activity-code" id="activity-1" data-numq="5">
+            <!-- Variable declaration -->
+            <div>
+                <pre>String[] gamesCollection = { "Pokémon Yellow", "Starcraft", "Call of Duty", "The Sims", "Crafting Simulator", "Minecraft", "VR Chat", "Tekken 8" };</pre>
+            </div>
+            <br>
+            
+            <!-- Method declaration -->
+            <div class="new-line">
+                <pre>public ArrayList&#60String&#62 searchGames(String[] games) {</pre>
+            </div>
+            <div class="new-line">
+                <pre>   ArrayList&#60String&#62 results = new ArrayList&#60String&#62 ;</pre>
+            </div>
+    
+            <!-- for loop -->
+            <div class="new-line">
+                <pre>   for ( int i = 0; </pre>
+            </div>
+            <div class="awnser-line" id="ans-dropzone-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="in-line">
+                <pre>; i++) {</pre>
+            </div>
+    
+            <div class="new-line">
+                <pre>      String name = games[i].toLowerCase();</pre>
+            </div>
+    
+            <div class="new-line">
+                <pre>      </pre>
+            </div>
+            <div class="awnser-line" id="ans-dropzone-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="in-line">
+                <pre>(</pre>
+            </div>
+            <div class="awnser-line" id="ans-dropzone-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="in-line">
+                <pre>) {</pre>
+            </div>
+    
+            <div class="new-line">
+                <pre>         results.add(</pre>
+            </div>
+            <div class="awnser-line" id="ans-dropzone-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="in-line">
+                <pre>);</pre>
+            </div>
+    
+            <div class="new-line">
+                <pre>      }</pre>
+            </div>
+            <div class="new-line">
+                <pre>   }</pre>
+            </div>
+    
+            <!-- Output results -->
+            <div class="new-line">
+                <pre>   </pre>
+            </div>
+            <div class="awnser-line" id="ans-dropzone-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="new-line">
+                <pre>};</pre>
+            </div>
+    
+            <!----------------------------------------------------------------------------------------------------->
+    
+            <!-- Score box -->
+            <div id="score" style="display:none"></div>
+    
+            <!-- Button to check answer -->
+            <button id="check-answer" type="button" onclick="checkAnswer(this)">Check answers</button>
+    
+            <!-- Button to clear drop area -->
+            <button id="clear-button" type="button" onclick="clearDropArea(this)">Clear</button>
         </div>
-        <div class="flex-element" id="code-5" draggable="true" ondragstart="drag(event)">
-            <code>return true;</code>
-        </div>
-        <div class="flex-element" id="code-6" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-5">
-            <code>return results;</code>
-        </div>
-        <div class="flex-element" id="code-7" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-3">
-            <code>name.contains("craft")</code>
-        </div>
-        <div class="flex-element" id="code-8" draggable="true" ondragstart="drag(event)">
-            <code>name.contains(keyword.toLowerCase())</code>
-        </div>
-        <div class="flex-element" id="code-9" draggable="true" ondragstart="drag(event)">
-            <code>name == "craft"</code>
-        </div>
-        <div class="flex-element" id="code-10" draggable="true" ondragstart="drag(event)" data-answer="ans-dropzone-4">
-            <code>games[i]</code>
-        </div>
-        <div class="flex-element" id="code-11" draggable="true" ondragstart="drag(event)">
-            <code>gamesCollection[i]</code>
-        </div>
-        <div class="flex-element" id="code-12" draggable="true" ondragstart="drag(event)">
-            <code>return false;</code>
-        </div>
-    </div>
-
-    <!-- Drop area -->
-    <div class="activity-code" id="activity-1" data-numq="5">
-        <!-- Variable declaration -->
-        <div>
-            <pre>String[] gamesCollection = { "Pokémon Yellow", "Starcraft", "Call of Duty", "The Sims", "Crafting Simulator", "Minecraft", "VR Chat", "Tekken 8" };</pre>
-        </div>
-        <br>
-        
-        <!-- Method declaration -->
-        <div class="new-line">
-            <pre>public ArrayList&#60String&#62 searchGames(String[] games) {</pre>
-        </div>
-        <div class="new-line">
-            <pre>   ArrayList&#60String&#62 results = new ArrayList&#60String&#62 ;</pre>
-        </div>
-
-        <!-- for loop -->
-        <div class="new-line">
-            <pre>   for ( int i = 0; </pre>
-        </div>
-        <div class="awnser-line" id="ans-dropzone-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="in-line">
-            <pre>; i++) {</pre>
-        </div>
-
-        <div class="new-line">
-            <pre>      String name = games[i].toLowerCase();</pre>
-        </div>
-
-        <div class="new-line">
-            <pre>      </pre>
-        </div>
-        <div class="awnser-line" id="ans-dropzone-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="in-line">
-            <pre>(</pre>
-        </div>
-        <div class="awnser-line" id="ans-dropzone-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="in-line">
-            <pre>) {</pre>
-        </div>
-
-        <div class="new-line">
-            <pre>         results.add(</pre>
-        </div>
-        <div class="awnser-line" id="ans-dropzone-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="in-line">
-            <pre>);</pre>
-        </div>
-
-        <div class="new-line">
-            <pre>      }</pre>
-        </div>
-        <div class="new-line">
-            <pre>   }</pre>
-        </div>
-
-        <!-- Output results -->
-        <div class="new-line">
-            <pre>   </pre>
-        </div>
-        <div class="awnser-line" id="ans-dropzone-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="new-line">
-            <pre>};</pre>
-        </div>
-
-        <!----------------------------------------------------------------------------------------------------->
-
-        <!-- Score box -->
-        <div id="score" style="display:none"></div>
-
-        <!-- Button to check answer -->
-        <button id="check-answer" type="button" onclick="checkAnswer(this)">Check answers</button>
-
-        <!-- Button to clear drop area -->
-        <button id="clear-button" type="button" onclick="clearDropArea(this)">Clear</button>
     </div>
 </body>
 </html>
