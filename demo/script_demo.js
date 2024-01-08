@@ -9,7 +9,7 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    
+
     if (ev.target.id.includes("dropzone")) {      
         if (ev.target.id.includes("ans-dropzone") && ev.target.children.length != 0) {   // Check if correct spot and is empty
             return;
@@ -42,22 +42,25 @@ function checkAnswer(ele) {
         }
     }
     
-    displayScore(score);
+    displayScore(score, numQ);
 }
 
-function displayScore(score) {
+function displayScore(score, numQ) {
     document.getElementById("score").style.display='block';
-    document.getElementById("score").innerHTML = "Score: " + String(score) + "/5";
+    document.getElementById("score").innerHTML = "Score: " + String(score) + "/" + String(numQ);
+    if (Number(score) == numQ) {
+        document.getElementById("score").style.border = "2px solid green";
+    } else {
+        document.getElementById("score").style.border = "2px solid red";
+    }
 }
 
 function gradeCorrect(divID) {
     document.getElementById(divID).style.border = "2px solid green";
-    document.getElementById("score").style.border = "2px solid green";
 }
 
 function gradeIncorrect(divID) {
     document.getElementById(divID).style.border = "2px solid red";
-    document.getElementById("score").style.border = "2px solid red";
 }
 
 function clearDropArea(ele) {
