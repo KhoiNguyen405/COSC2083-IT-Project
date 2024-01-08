@@ -61,7 +61,7 @@
 #check-answer {
     position: absolute;
     height: 3em;
-    bottom: 5%;
+    bottom: 15px;
     right: 5%;
 }
 
@@ -76,7 +76,7 @@
 
 #clear-button {
     position: absolute;
-    top: 100%;
-    right: 95%;
+    bottom: 0px;
+    left: 5px;
     margin: 10px;
 }
