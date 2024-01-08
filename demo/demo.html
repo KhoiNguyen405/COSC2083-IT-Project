@@ -83,7 +83,7 @@
     </div>
 
     <!-- Drop area -->
-    <div class="activity-code">
+    <div class="activity-code" id="activity-1" data-numq="5">
         <!-- Variable declaration -->
         <div>
             <pre>String[] gamesCollection = { "Pokémon Yellow", "Starcraft", "Call of Duty", "The Sims", "Crafting Simulator", "Minecraft", "VR Chat", "Tekken 8" };</pre>
@@ -153,12 +153,12 @@
         <div id="score" style="display:none"></div>
 
         <!-- Button to check answer -->
-        <button id="check-answer" type="button" onclick="checkAnswer(5)">Check answers</button>
+        <button id="check-answer" type="button" onclick="checkAnswer(this)">Check answers</button>
     </div>
 
     <!-- Button to clear drop area -->
     <div>
-        <button id="clear-button" type="button" onclick="clearDropArea(5)">Clear</button>
+        <button id="clear-button" type="button" onclick="clearDropArea()">Clear</button>
     </div>
 </body>
 </html>

@@ -19,8 +19,10 @@ function drop(ev) {
     return;
 }
 
-function checkAnswer(numQ) {
+function checkAnswer(ele) {
     var score = 0;
+    var activity_num = ele.parentNode.id;
+    var numQ = document.getElementById(activity_num).getAttribute("data-numq");
     let dropzone_ID;
     let child_el;
     for (let i = 0; i < numQ; i++) {
