@@ -58,7 +58,8 @@ function gradeIncorrect(divID) {
     document.getElementById("score").style.border = "2px solid red";
 }
 
-function clearDropArea(numQ) {
+function clearDropArea(activity) {
+    var numQ = document.getElementById(activity).getAttribute("data-numq");
     // Clear dropzones
     let dropzone_ID;
     let child_el;
