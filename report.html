@@ -11,28 +11,44 @@
         font-family: "Times New Roman", Times, serif;
         max-width: 900px;
       }
+
       p {
         text-align: justify;
         line-height: 1.5;
         font-size: 1em;
       }
-      table, th, td {
-        border:1px solid black;
+
+      ol.table-of-content-list {
+        list-style-type: upper-roman;
+      }
+
+      td.student-number {
+        padding-left: 50px;
+      }
+
+      table.timeframe-table,
+      th,
+      td.timeframe-cell {
+        border: 1px solid black;
         border-collapse: collapse;
         padding: 10px;
       }
+
       th.week-header {
         background-color: lightskyblue;
         width: 75px;
       }
+
       th.main-header {
         background-color: lightskyblue;
         width: 300px;
       }
+
       th.completed-week {
         background-color: lightblue;
         width: 75px;
       }
+
       th.incomplete-week {
         background-color: lightgray;
         width: 75px;
@@ -44,11 +60,20 @@
     <div class="intro-section">
       <h1 class="report-title">Assignment 3: Our IT Project</h1>
 
-      <ul>
-        <li> Mai K Dang Khoa - s4058813 </li>
-        <li> Wong Vi Khang - s3978666 </li>
-        <li> Nguyen Hoang Anh Khoi - s4052683 </li>
-      </ul>
+      <table class="member-table">
+        <tr>
+          <td>Mai K Dang Khoa</td>
+          <td class="student-number">s4058813</td>
+        </tr>
+        <tr>
+          <td>Wong Vi Khang</td>
+          <td class="student-number">s3978666</td>
+        </tr>
+        <tr>
+          <td>Nguyen Hoang Anh Khoi</td>
+          <td class="student-number">s4052683</td>
+        </tr>
+      </table>
     </div>
 
     <hr>
@@ -59,6 +84,14 @@
       <ol class="table-of-content-list">
         <li id="section-1">
           <a href="#team-profile">Team Profile</a>
+          <ol>
+            <li>
+              <a href="#team-name">Team Name</a>
+            </li>
+            <li>
+              <a href="#personal-info">Personal Information</a>
+            </li>
+          </ol>
         </li>
         <li id="section-2">
           <a href="#tools-description">Tools</a>
@@ -81,12 +114,12 @@
     <div class="report-section" id="team-profile">
       <h1 class="section-title">Team Profile</h1>
 
-      <div class="subsection">
+      <div class="subsection" id="team-name">
         <h2 class="subsection-title">Team Name</h2>
         <p>Our team’s name is <strong style="font-size: 1.25em;">Leap Forward</strong>.</p>
       </div>
 
-      <div class="subsection">
+      <div class="subsection" id="personal-info">
         <h2 class="subsection-title">Personal Information</h2>
         <div class="member-info">
           <h3>Mai K Dang Khoa - s4058813</h3>
@@ -139,19 +172,19 @@
     <div class="report-section" id="project-description">
       <h1 class="section-title">Project Description</h1>
 
-      <div class="subsection">
+      <div class="subsection" id="overview">
         <h2 class="subsection-title">Overview</h2>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="aims">
         <h2 class="subsection-title">Aims</h2>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="plans-progress">
         <h2 class="subsection-title">Plans and Progress</h2>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="roles">
         <h2 class="subsection-title">Roles</h2>
         <p>The roles for each team member during the approximate 4 weeks of project work were planned to be as follows:
           Khoi as the Lead developer, Khang as the User interface designer and developer, and Khoa as the Web developer
@@ -172,11 +205,11 @@
           ensuring the demo works correctly by identifying bugs and designing test cases.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="scopes-limits">
         <h2 class="subsection-title">Scopes and Limits</h2>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="tools-technologies">
         <h2 class="subsection-title">Tools and Technologies</h2>
         <p>To build this website we used HTML, CSS and JavaScript, each with different purposes.
           HTML defines the structure of draggable elements, CSS can style the elements and provides the layout.
@@ -186,7 +219,7 @@
           of his experience come from this project.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="testing">
         <h2 class="subsection-title">Testing</h2>
         <p>The website's drag-and-drop function is tested by dragging chunks of code around to see if it works. All
           the functions of the website have been working smoothly so far. We will know when we have succeed when you get
@@ -198,9 +231,9 @@
           Visual Studio code experience the coding for the website.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="timeframe">
         <h2 class="subsection-title">Timeframe</h2>
-        <table>
+        <table class="timeframe-table">
           <tr>
             <th class="week-header">Week #</th>
             <th class="main-header">Khoa's tasks</th>
@@ -209,86 +242,87 @@
           </tr>
           <tr>
             <th class="completed-week"><b>Week 1</b></th>
-            <td>Brainstorm ideas for project.</td>
-            <td>Brainstorm ideas for project.</td>
-            <td>Brainstorm ideas for project.</td>
+            <td class="timeframe-cell">Brainstorm ideas for project.</td>
+            <td class="timeframe-cell">Brainstorm ideas for project.</td>
+            <td class="timeframe-cell">Brainstorm ideas for project.</td>
           </tr>
           <tr>
             <th class="completed-week"><b>Week 2</b></th>
-            <td>Research HTML and begin building HTML skeleton for report’s website.</td>
-            <td>Research CSS and Begin designing interface for project’s website.</td>
-            <td>Research JavaScript and how to implement drag-and-drop functionality.</td>
+            <td class="timeframe-cell">Research HTML and begin building HTML skeleton for report’s website.</td>
+            <td class="timeframe-cell">Research CSS and Begin designing interface for project’s website.</td>
+            <td class="timeframe-cell">Research JavaScript and how to implement drag-and-drop functionality.</td>
           </tr>
           <tr>
             <th class="completed-week"><b>Week 3</b></th>
-            <td>Write report and further implement HTML code for report’s website and demo webpage.</td>
-            <td>Write report and design interface for report’s website and demo webpage.</td>
-            <td>Write report and implement drag-and-drop script for demo webpage and integration into HTML code.</td>
+            <td class="timeframe-cell">Write report and further implement HTML code for report’s website and demo webpage.</td>
+            <td class="timeframe-cell">Write report and design interface for report’s website and demo webpage.</td>
+            <td class="timeframe-cell">Write report and implement drag-and-drop script for demo webpage and integration into HTML code.</td>
           </tr>
           <tr>
             <th class="completed-week"><b>Week 4</b></th>
-            <td>Perform testing of demo webpage and write report.</td>
-            <td>Implement CSS styling for demo webpage and write report.</td>
-            <td>Further implement HTML code for report’s website and demo webpage and write report.</td>
+            <td class="timeframe-cell">Perform testing of demo webpage and write report.</td>
+            <td class="timeframe-cell">Implement CSS styling for demo webpage and write report.</td>
+            <td class="timeframe-cell">Further implement HTML code for report’s website and demo webpage and write report.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 5</b></th>
-            <td>Research study topics and interactive activities to implement into project.</td>
-            <td>Design interface for broader project’s website.</td>
-            <td>Research study topics and interactive activities to implement into project.</td>
+            <td class="timeframe-cell">Research study topics and interactive activities to implement into project.</td>
+            <td class="timeframe-cell">Design interface for broader project’s website.</td>
+            <td class="timeframe-cell">Research study topics and interactive activities to implement into project.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 6</b></th>
-            <td>Design test plans and test cases.</td>
-            <td>Begin implementation of CSS styling for project’s website.</td>
-            <td>Begin implementation of HTML code for project’s website.</td>
+            <td class="timeframe-cell">Design test plans and test cases.</td>
+            <td class="timeframe-cell">Begin implementation of CSS styling for project’s website.</td>
+            <td class="timeframe-cell">Begin implementation of HTML code for project’s website.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 7</b></th>
-            <td>Implement HTML code for onboarding webpage.</td>
-            <td>Further implement CSS styling for onboarding webpage.</td>
-            <td>Further implement HTML code for individual activity pages.</td>
+            <td class="timeframe-cell">Implement HTML code for onboarding webpage.</td>
+            <td class="timeframe-cell">Further implement CSS styling for onboarding webpage.</td>
+            <td class="timeframe-cell">Further implement HTML code for individual activity pages.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 8</b></th>
-            <td>Perform testing of project’s website and fix bugs.</td>
-            <td>Perform testing of project’s website and fix bugs.</td>
-            <td>Perform testing of project’s website and fix bugs.</td>
+            <td class="timeframe-cell">Perform testing of project’s website and fix bugs.</td>
+            <td class="timeframe-cell">Perform testing of project’s website and fix bugs.</td>
+            <td class="timeframe-cell">Perform testing of project’s website and fix bugs.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 9</b></th>
-            <td>Research user testing and design new test plans.</td>
-            <td>Fix remaining bugs and research back-end database implementation.</td>
-            <td>Fix remaining bugs and research back-end database implementation.</td>
+            <td class="timeframe-cell">Research user testing and design new test plans.</td>
+            <td class="timeframe-cell">Fix remaining bugs and research back-end database implementation.</td>
+            <td class="timeframe-cell">Fix remaining bugs and research back-end database implementation.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 10</b></th>
-            <td>Conduct user testing.</td>
-            <td>Begin implementation of back-end database.</td>
-            <td>Assist implementation of back-end database and begin integration with front-end.</td>
+            <td class="timeframe-cell">Conduct user testing.</td>
+            <td class="timeframe-cell">Begin implementation of back-end database.</td>
+            <td class="timeframe-cell">Assist implementation of back-end database and begin integration with front-end.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 11</b></th>
-            <td>Implement feedback from user testing and perform testing of back-end.</td>
-            <td>Further implement back-end database and perform testing of back-end.</td>
-            <td>Further implement back-end database and integration with front-end.</td>
+            <td class="timeframe-cell">Implement feedback from user testing and perform testing of back-end.</td>
+            <td class="timeframe-cell">Further implement back-end database and perform testing of back-end.</td>
+            <td class="timeframe-cell">Further implement back-end database and integration with front-end.</td>
           </tr>
           <tr>
             <th class="incomplete-week"><b>Week 12</b></th>
-            <td>Fix remaining bugs.</td>
-            <td>Fix remaining bugs and deploy website.</td>
-            <td>Fix remaining bugs and deploy website.</td>
+            <td class="timeframe-cell">Fix remaining bugs.</td>
+            <td class="timeframe-cell">Fix remaining bugs and deploy website.</td>
+            <td class="timeframe-cell">Fix remaining bugs and deploy website.</td>
           </tr>
         </table>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="risks">
         <h2 class="subsection-title">Risks</h2>
-        <p>There were two difficulties we ran into. First was coding in Javascript due to how hard it was. Second was integrating Javascript codes into html. 
+        <p>There were two difficulties we ran into. First was coding in Javascript due to how hard it was. Second was
+          integrating Javascript codes into html.
           These two difficulties if left half-way done can lead to the risk of the coding of the website messing up.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="group-processes">
         <h2 class="subsection-title">Group Processes and Communications</h2>
         <p>We use Messenger to communicate with each other while discussing things
           related to assignments due to how fast, convenient and versatile it is, therefore, no meetings were required.
@@ -308,7 +342,7 @@
     <div class="report-section" id="skills-jobs">
       <h1 class="section-title">Skills and Jobs</h1>
 
-      <div class="subsection">
+      <div class="subsection" id="front-end-dev">
         <h2 class="subsection-title">Front-end Web Developer</h2>
         <p><strong>Skills:</strong> HTML, CSS, JavaScript, Web design, User Interface and User Experience design.</p>
         <p>This position will be responsible for developing the product’s web application using a combination of HTML,
@@ -319,7 +353,7 @@
           activities and study materials in the web application.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="back-end-dev">
         <h2 class="subsection-title">Back-end Web Developer</h2>
         <p><strong>Skills:</strong> JavaScript, Object-oriented programming language (such as Java or C#), Database
           design, SQL.</p>
@@ -334,7 +368,7 @@
           specifications to fit the project’s needs.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="web-tester">
         <h2 class="subsection-title">Quality Assurance Website Tester</h2>
         <p><strong>Skills:</strong> Web application testing (including knowledge of HTML, CSS and JavaScript),
           Automation and Manual testing, Good communication and analytical skills.</p>
@@ -350,7 +384,7 @@
           collaboration with other team members.</p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="educational-consultant">
         <h2 class="subsection-title">Educational Consultant</h2>
         <p><strong>Skills:</strong> Strong communication and teamwork skills, Teaching experience, Knowledge on computer
           science and IT topics, Study plan or roadmap creation.</p>
@@ -371,22 +405,25 @@
     <div class="report-section" id="group-reflection">
       <h1 class="section-title">Group Reflection</h1>
 
-      <div class="subsection">
+      <div class="subsection" id="khoa-reflection">
         <h2 class="subsection-title">Khoa's Reflection</h2>
-        <p>The website building has gone well. The goal of building a drag-and-drop website has been noticeably clear, 
-          which is to educate people about IT. The website itself is easy to use. I do not think there is anything to improve in my opinion. 
-          There are at least two surprising things about this project. One is that everyone has been very cooperative, much more cooperative compared to projects from my other courses. 
-          Two is how much of a great leader Khoi can be, as he split the project into an appropriate number of tasks for each of us to work on. 
-          Moreover, he gives me a valid opinion on how to work on an HTML report. 
-          I have learned something remarkably interesting about groups. 
+        <p>The website building has gone well. The goal of building a drag-and-drop website has been noticeably clear,
+          which is to educate people about IT. The website itself is easy to use. I do not think there is anything to
+          improve in my opinion.
+          There are at least two surprising things about this project. One is that everyone has been very cooperative,
+          much more cooperative compared to projects from my other courses.
+          Two is how much of a great leader Khoi can be, as he split the project into an appropriate number of tasks for
+          each of us to work on.
+          Moreover, he gives me a valid opinion on how to work on an HTML report.
+          I have learned something remarkably interesting about groups.
           They all have various other projects with unique approach methods which to me is fascinating. </p>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="khang-reflection">
         <h2 class="subsection-title">Khang's Reflection</h2>
       </div>
       <br>
-      <div class="subsection">
+      <div class="subsection" id="khoi-reflection">
         <h2 class="subsection-title">Khoi's Reflection</h2>
       </div>
     </div>
