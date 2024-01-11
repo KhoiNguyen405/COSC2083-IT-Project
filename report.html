@@ -11,11 +11,31 @@
         font-family: "Times New Roman", Times, serif;
         max-width: 900px;
       }
-
       p {
         text-align: justify;
         line-height: 1.5;
         font-size: 1em;
+      }
+      table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      th.week-header {
+        background-color: lightskyblue;
+        width: 75px;
+      }
+      th.main-header {
+        background-color: lightskyblue;
+        width: 300px;
+      }
+      th.completed-week {
+        background-color: lightblue;
+        width: 75px;
+      }
+      th.incomplete-week {
+        background-color: lightgray;
+        width: 75px;
       }
     </style>
   </head>
@@ -55,7 +75,8 @@
       </ol>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div class="report-section" id="team-profile">
       <h1 class="section-title">Team Profile</h1>
@@ -93,22 +114,27 @@
 
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div class="report-section" id="tools-description">
       <h1 class="section-title">Tools</h1>
 
       <p>
-        <a href="https://khoinguyen405.github.io/COSC2083-IT-Project/">COSC2083 IT Project - Report website</a>
+        <a href="https://khoinguyen405.github.io/COSC2083-IT-Project/">
+          COSC2083 IT Project - Report website
+        </a>
       </p>
       <p>
-        <a href="https://github.com/KhoiNguyen405/COSC2083-IT-Project/tree/main">COSC2083 IT Project - GitHub
-          repository</a>
+        <a href="https://github.com/KhoiNguyen405/COSC2083-IT-Project/tree/main">
+          COSC2083 IT Project - GitHub repository
+        </a>
       </p>
 
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div class="report-section" id="project-description">
       <h1 class="section-title">Project Description</h1>
@@ -138,7 +164,7 @@
         <p>Khang initially took the role of a User Interface (UI) designer due to his creativity and understanding of
           engaging user interface from playing video games. He designed the interface for the project webpages,
           including for the interactive activity in the demo webpage. Afterwards, Khang also would take over the role of
-          a UI developer and implemented his designs for the project website, as well as for the report webpage.</p>
+          a UI developer and implemented his designs for the project website and the report webpage.</p>
         <p>Khoa, on the other hand, volunteered to develop the front-end for the project website, as he wanted to
           improve his skills in web development, specifically in HTML programming. The web pages that he worked on
           include the demo page and the report page. In addition to his web development tasks, Khoa would also take the
@@ -174,6 +200,86 @@
       <br>
       <div class="subsection">
         <h2 class="subsection-title">Timeframe</h2>
+        <table>
+          <tr>
+            <th class="week-header">Week #</th>
+            <th class="main-header">Khoa's tasks</th>
+            <th class="main-header">Khang's tasks</th>
+            <th class="main-header">Khoi's tasks</th>
+          </tr>
+          <tr>
+            <th class="completed-week"><b>Week 1</b></th>
+            <td>Brainstorm ideas for project.</td>
+            <td>Brainstorm ideas for project.</td>
+            <td>Brainstorm ideas for project.</td>
+          </tr>
+          <tr>
+            <th class="completed-week"><b>Week 2</b></th>
+            <td>Research HTML and begin building HTML skeleton for report’s website.</td>
+            <td>Research CSS and Begin designing interface for project’s website.</td>
+            <td>Research JavaScript and how to implement drag-and-drop functionality.</td>
+          </tr>
+          <tr>
+            <th class="completed-week"><b>Week 3</b></th>
+            <td>Write report and further implement HTML code for report’s website and demo webpage.</td>
+            <td>Write report and design interface for report’s website and demo webpage.</td>
+            <td>Write report and implement drag-and-drop script for demo webpage and integration into HTML code.</td>
+          </tr>
+          <tr>
+            <th class="completed-week"><b>Week 4</b></th>
+            <td>Perform testing of demo webpage and write report.</td>
+            <td>Implement CSS styling for demo webpage and write report.</td>
+            <td>Further implement HTML code for report’s website and demo webpage and write report.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 5</b></th>
+            <td>Research study topics and interactive activities to implement into project.</td>
+            <td>Design interface for broader project’s website.</td>
+            <td>Research study topics and interactive activities to implement into project.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 6</b></th>
+            <td>Design test plans and test cases.</td>
+            <td>Begin implementation of CSS styling for project’s website.</td>
+            <td>Begin implementation of HTML code for project’s website.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 7</b></th>
+            <td>Implement HTML code for onboarding webpage.</td>
+            <td>Further implement CSS styling for onboarding webpage.</td>
+            <td>Further implement HTML code for individual activity pages.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 8</b></th>
+            <td>Perform testing of project’s website and fix bugs.</td>
+            <td>Perform testing of project’s website and fix bugs.</td>
+            <td>Perform testing of project’s website and fix bugs.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 9</b></th>
+            <td>Research user testing and design new test plans.</td>
+            <td>Fix remaining bugs and research back-end database implementation.</td>
+            <td>Fix remaining bugs and research back-end database implementation.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 10</b></th>
+            <td>Conduct user testing.</td>
+            <td>Begin implementation of back-end database.</td>
+            <td>Assist implementation of back-end database and begin integration with front-end.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 11</b></th>
+            <td>Implement feedback from user testing and perform testing of back-end.</td>
+            <td>Further implement back-end database and perform testing of back-end.</td>
+            <td>Further implement back-end database and integration with front-end.</td>
+          </tr>
+          <tr>
+            <th class="incomplete-week"><b>Week 12</b></th>
+            <td>Fix remaining bugs.</td>
+            <td>Fix remaining bugs and deploy website.</td>
+            <td>Fix remaining bugs and deploy website.</td>
+          </tr>
+        </table>
       </div>
       <br>
       <div class="subsection">
@@ -194,7 +300,8 @@
       </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div class="report-section" id="skills-jobs">
       <h1 class="section-title">Skills and Jobs</h1>
@@ -256,7 +363,8 @@
       </div>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div class="report-section" id="group-reflection">
       <h1 class="section-title">Group Reflection</h1>
