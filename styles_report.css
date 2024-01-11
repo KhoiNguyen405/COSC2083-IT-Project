@@ -2,18 +2,42 @@
     font-family: "Times New Roman", Times, serif;
 }
 
+.intro-section {
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.report-title {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.section-title {
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.subsection-title {
+    padding-left: 10px;
+}
+
 p {
     text-align: justify;
     line-height: 1.5;
     font-size: 1em;
     max-width: 900px;
+    padding-left: 10px;
 }
 
-.table-of-content-list {
+.table-of-contents-list {
     list-style-type: square;
 }
 
-.table-of-content-list ol {
+.table-of-contents-list ol {
     list-style-type: none;
 }
 
