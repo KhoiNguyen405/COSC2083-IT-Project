@@ -5,7 +5,7 @@
 .intro-section {
     background-color: lightskyblue;
     border-radius: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .report-title {
@@ -16,8 +16,8 @@
 .section-title {
     background-color: lightskyblue;
     border-radius: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 10px;
 }
 
@@ -29,7 +29,7 @@ p {
     text-align: justify;
     line-height: 1.5;
     font-size: 1em;
-    max-width: 900px;
+    max-width: 850px;
     padding-left: 10px;
 }
 
@@ -58,7 +58,7 @@ td.timeframe-cell {
 }
 
 table.timeframe-table {
-    max-width: 900px;
+    max-width: 860px;
 }
 
 th.week-header {
