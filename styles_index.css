@@ -80,3 +80,11 @@ th.incomplete-week {
     background-color: lightgray;
     width: 75px;
 }
+
+.demo-section {
+    text-align: center;
+    font-size: 2em;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 10px;
+}
