@@ -1,0 +1,54 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1em;
+    max-width: 900px;
+}
+
+.table-of-content-list {
+    list-style-type: square;
+}
+
+.table-of-content-list ol {
+    list-style-type: none;
+}
+
+td.student-number {
+    padding-left: 50px;
+}
+
+table.timeframe-table,
+th,
+td.timeframe-cell {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table.timeframe-table {
+    max-width: 900px;
+}
+
+th.week-header {
+    background-color: lightskyblue;
+    width: 75px;
+}
+
+th.main-header {
+    background-color: lightskyblue;
+    width: 300px;
+}
+
+th.completed-week {
+    background-color: lightblue;
+    width: 75px;
+}
+
+th.incomplete-week {
+    background-color: lightgray;
+    width: 75px;
+}
