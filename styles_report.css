@@ -41,6 +41,10 @@ p {
     list-style-type: none;
 }
 
+td.student-name {
+    padding-left: 10px
+}
+
 td.student-number {
     padding-left: 50px;
 }
